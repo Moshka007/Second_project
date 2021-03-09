@@ -36,10 +36,8 @@ const back = document.querySelector('.promo__bg');
 back.style.backgroundImage = "url('img/bg.jpg')";
 
 const watchedFilms = document.querySelector('.promo__interactive-list');
-/*watchedFilms.forEach((item, i) => {
-    item.textContent = `${i+1}. ${movieDB.movies[i]}`;
-});*/
 watchedFilms.innerHTML = "";
+
 movieDB.movies.sort();
 
 movieDB.movies.forEach((item, i) => {
